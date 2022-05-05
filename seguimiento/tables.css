@@ -1,0 +1,167 @@
+h1 {
+    font-size: 20px;
+    padding: 10px;
+    color: #000;
+    text-transform: uppercase;
+    font-weight:bold !important;
+    text-align: center;
+    margin-left: 15px;
+    margin-bottom: 0;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    width: 60%;
+    background-color: #C7C7C7;
+}
+
+
+/*h1{
+  font-size: 30px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 15px;
+}*/
+
+table {
+    width: 100%;
+    table-layout: fixed;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-collapse: collapse;
+}
+
+.tbl-header {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.tbl-content {
+    /*overflow-x:auto;*/
+    background-color: #fff;
+    margin-top: 0px;
+    border: 2px solid rgba(255, 255, 255, .1);
+}
+
+th {
+    padding: 20px 15px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+td {
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: 300;
+    font-size: 0.813rem;
+    color: black;
+    border-bottom: solid 1px rgba(255, 255, 255, 0.1);
+    width: 50%;
+}
+
+
+/*responsive*/
+
+@media (min-width: @screen-sm-min) {
+    h1 {
+        font-size: 15px;
+    }
+    .table {
+        padding-top: 0;
+    }
+    .table thead {
+        display: none;
+    }
+    .table,
+    .table tbody,
+    .table tr,
+    .table td {
+        display: block;
+        width: 100%;
+    }
+    .table tr {
+        margin-bottom: 15px;
+    }
+    .table td {
+        text-align: right;
+        padding-left: 50%;
+        text-align: right;
+        position: relative;
+    }
+    .table td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 15px;
+        font-size: 15px;
+        font-weight: bold;
+        text-align: left;
+    }
+}
+
+@media(max-width: 576px) {
+    h1 {
+        font-size: 15px;
+    }
+    .table {
+        padding-top: 0;
+    }
+    .table thead {
+        display: none;
+    }
+    .table,
+    .table tbody,
+    .table tr,
+    .table td {
+        display: block;
+        width: 100%;
+    }
+    .table tr {
+        margin-bottom: 15px;
+    }
+    .table td {
+        text-align: right;
+        padding-left: 50%;
+        text-align: right;
+        position: relative;
+    }
+    .table td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 15px;
+        font-size: 15px;
+        font-weight: bold;
+        text-align: left;
+    }
+}
+
+
+/* demo styles */
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url("gray-back.jpg");
+    /* Set a specific height */
+    height: 100vh;
+}
+
+
+/* .hero-image {
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read 
+    background-image: url("blue_back.jpg");
+    /* Set a specific height 
+    height: 100vh;
+    /* Position and center the image to scale nicely on all screens 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+} */
